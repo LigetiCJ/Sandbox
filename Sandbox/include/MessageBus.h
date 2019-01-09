@@ -17,8 +17,7 @@ class MessageBus
     protected:
 
     private:
-        //MessageBusSubscriber subs[16] = {};
-
+        MessageBusSubscriber* subs[16] = {};
 };
 
 
