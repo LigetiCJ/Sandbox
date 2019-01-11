@@ -31,5 +31,7 @@
 *.out
 *.app
 
-#Codeblocks Projects
+#Codeblocks Projects and other things
 *.cbp
+*.depend
+*.layout
