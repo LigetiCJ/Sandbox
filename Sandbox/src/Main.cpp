@@ -2,7 +2,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 #include "MessageBus.h"
-//#include "MessageBusSubscriber.h"
+#include "TimeUtil.h"
 
 
 
@@ -13,8 +13,13 @@ int main(int argc, char* argv[] ){
 
 
     MessageBus mb;
+
     MessageBusSubscriber mbs;
     MessageBusSubscriber mbs2;
+
+    TimeUtil tu;
+
+    tu.subscribe(&mb);
     mbs.subscribe(&mb);
     mbs2.subscribe(&mb);
 
